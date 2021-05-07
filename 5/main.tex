@@ -1,0 +1,208 @@
+\section{Trabalho, Energia Cinética e Energia Potencial}
+\subsection{Conteúdo Importante}
+\subsubsection{Energia Cinética}
+
+Para um objeto com massa $m$ e velocidade $v$, a energia cinética está definida como
+
+\begin{equation}
+    K=\frac{1}{2}mv^2
+\end{equation}
+
+A energia cinética é um escalar (tem magnitude mas não direção); é sempre um número positivo; e tem unidades do SI de $kg\cdot m^2s^{-2}$. Esta combinação é também conhecida como \textbf{joule}:
+
+\begin{equation}
+    1\ joule=1J=1\ kg\cdot m^2s^{-2}
+\end{equation}
+
+\subsubsection{Trabalho}
+Quando um objeto se move enquanto um força é exercida sobre ele, então há \textbf{trabalho} a ser feito no objeto pela força.
+Se um objeto efetuar um deslocamento $d$ enquanto uma \emph{força constante} \textbf{F} atua nele, a força faz uma quantidade de trabalho igual a
+
+$$
+W=F\cdot d=Fdcos\phi
+$$
+
+onde $\phi$ é o ângulo entre \textbf{d} e \textbf{F}. O trabalho é também uma grandeza escalar cujas unidades são $N\cdot m$.
+
+O trabalho pode ser negativo; isto acontece quando o ângulo entre a força e o deslocamento é maior que $90^{\circ}$. Também pode ser \emph{zero}; isto acontece se $\phi=90^{\circ}$. Para que exista trabalho, a força tem de ter uma componente ao longo (ou oposta) à direção do deslocamento.
+Se várias forças (constantes) atuarem na massa enquanto se move ao longo de um deslocamento \textbf{d}, podemos falar do \textbf{trabalho resultante} feito pelas forças,
+
+$$
+\begin{aligned}
+    W_{R}&=F_1\cdot d+F_2\cdot d+F_3\cdot d...+F_n\cdot d\\
+    &=(\sum F)\cdot d \\
+    &=F_{R}\cdot d
+\end{aligned}
+$$
+
+Se a força que atua sobre o objeto não é constante enquanto o objeto se move, então devemos calcular um integral para encontrar o trabalho realizado.
+Supondo que o objeto se mova ao longo de uma linha reta (digamos, ao longo do eixo $x$, de $x_i$ a $x_f$) enquanto
+uma força cujo componente $x$ é $F_x(x)$ atua sobre ele. (Ou seja, conhecemos a força $F_x$ como uma função
+de $x$.) Então, o trabalho realizado é
+
+\begin{equation}\label{eq:trabalho}
+    W=\int_{x_i}^{x_f}F_x(x)dx
+\end{equation}
+
+Finalmente, podemos dar a expressão general para o trabalho feito por uma força. Se um objeto se move de $r_i=x_ii+y_ij+z_ik$ a $r_f=x_fi+y_fj+z_fk$ enquanto a força $F(r)$ atua sobre ele, o trabalho feito é:
+
+\begin{equation}
+    W=\int_{x_i}^{x_f}F_x(r)dx+\int_{y_i}^{y_f}F_y(r)dy+\int_{z_i}^{z_f}F_z(r)dz
+\end{equation}
+
+onde os integrais são calculados ao longo do caminho traçado pelo objeto. Esta expressão pode ser abreviada por
+
+\begin{equation}
+W=\int_{r_i}^{r_f}F\cdot dr
+\end{equation}
+
+A gravidade funciona em objetos que se movem verticalmente. Pode-se mostrar que se a altura de um objeto mudou numa quantidade $\Delta y$, então a gravidade fez uma quantidade de trabalho igual a 
+
+\begin{equation}
+W_{g}=-mg\Delta y
+\end{equation}
+
+sem qualquer influência do deslocamento horizontal. Observe-se o sinal de menos aqui; se o objeto aumenta em altura, moveu-se de forma oposta à força da gravidade.
+
+\subsubsection{Força da Mola}
+O exemplo mais famoso de uma força cujo valor depende da posição é a força da mola, que descreve a força exercida sobre um objeto até o final de uma \textbf{mola ideal}. Um mola ideal irá puxar o objeto preso à sua extremidade com uma força proporcional à quantidade pela qual é esticada; irá empurrar para fora o objeto anexado a ela com um força proporcional à quantidade de compressão.
+Se descrevermos o movimento no final da mola com a coordenada $x$ e colocar-mos a origem do eixo dos $x$ no sítio onde a mola não exerce qualquer força (a dita posição de equilíbrio), então a força da mola é dada por
+
+\begin{equation}
+    F_x=-kx
+\end{equation}
+
+Aqui, $k$ é um número que é diferente para cada mola ideal e é uma medida que se relaciona com a sua "rigidez" (capacidade de compressão/expansão). A sua unidade é $Nm^{-1}=kgs^{-2}$. Esta equação é conhecida como a \textbf{Lei de Hooke}. Esta lei dá uma descrição decente do comportamento de molas reais, desde que elas possam oscilar sobre suas posições de equilíbrio e não são esticadas demasiado.
+
+O trabalho feito por uma força num objeto anexo ao seu, que se move de $x_i$ até $x_f$, pode ser calculado por
+
+\begin{equation}
+    W_{mola}=\frac{1}{2}kx_i^2-\frac{1}{2}kx_f^2
+\end{equation}
+
+\subsubsection{O Teorema do Trabalho-Energia Cinética}
+Pode-se mostrar que conforme uma partícula se move do ponto $r_i$ para $r_f$, a mudança na energia cinética do objeto é igual ao trabalho resultante feito nele:
+
+\begin{equation}
+    \Delta K=K_f-K_i=W_{R}
+\end{equation}
+
+\subsubsection{Potência}
+Em certas aplicações, estamos interessados na taxa à qual trabalho é realizado por uma força. Se um quantidade de trabalho $W$ é feito num tempo $\Delta t$, então dizemos que a \textbf{potência média} $\bar{P}$ devido à força é
+
+\begin{equation}
+    \bar{P}=\frac{W}{\Delta t}
+\end{equation}
+
+No limite em que $W$ e $\Delta t$ são muito pequenos, temos a \textbf{potência instantânea} $P$:
+
+\begin{equation}
+    P=\frac{dW}{dt}
+\end{equation}
+
+A unidade do SI de potência é o \textbf{watt}, definido por:
+
+\begin{equation}
+    1\ watt = 1\ W = 1\ jS^{-1}=1\ ks\cdot m^2\cdot s^{-3}
+\end{equation}
+
+Pode-se mostrar que se uma força $F$ atua sobre uma partícula que se move com velocidade $v$, então a taxa instantânea na qual o trabalho é feito na partícula é
+
+\begin{equation}
+    P=F\cdot v=Fv\cos(\phi)
+\end{equation}
+
+onde $\phi$ é o angulo entre as direções de $F$ e $v$.
+
+\subsubsection{Forças Conservativas}
+O trabalho feito num objeto pela força da gravidade não depende do caminho percorrido para ir de uma posição a outra. O mesmo é verdade para a força de uma mola. Em ambos os casos, precisamos de saber as coordenadas inicias e finais para computer $W$, o trabalho feito por essa força.
+Esta situação também ocorre com a lei geral para a força da gravidade (ver Eq. \ref{eq:lei_da_gravidade}).
+Esta situação não se verifica nas forças de atrito vistas anteriormente. As forças de atrito realizam trabalho sobre massas que se movem, mas para calcular o trabalho feito por essas forças, precisamos de saber o \emph{como} as massas foram de um ponto a outro.
+Se o trabalho resultante feito por uma força não depender do caminho percorrido entre dois pontos, dizemos que a força é uma \textbf{força conservativa}. Para estas forças, também se verifica que o trabalho resultante feito numa partícula que se move em torno de um caminho fechado é \emph{zero}.
+
+\subsubsection{Energia Potencial}
+Para uma força conservativa, é possível encontrar uma função de posição chamada de potencial energia, escrita $U(r)$, da qual podemos encontrar o trabalho realizado pela força.
+Supondo que uma partícula se move de $r_i$ a $r_f$. Então, o trabalho feito na partícula por uma força conservativa está relacionado com a correspondente função de energia potencial dada por:
+
+\begin{equation}\label{eq:trabalho-potencial}
+    W_{r_i \to r_f}=-\Delta U=U(r_i)-U(r_f)
+\end{equation}
+
+A unidade do SI de $U$ é o joules.
+
+Foram encontradas duas forças conservativas até agora. A mais simples é a força da gravidade perto da superfície terrestre, nomeadamente $-mg\Delta y$ para uma massa $m$, onde o eixo $y$ aponta para cima. Para esta força, pode-se mostrar que a energia potencial é
+
+\begin{equation}
+    U_{g}=mgy
+\end{equation}
+
+Nesta equação, é \emph{arbitrário} onde colocamos a origem do eixo $y$, mas uma vez feita essa escolha, terá de ser mantida.
+A outra força conservativa estudada é a força da mola. Uma mola com constante $k$ que é estendida desde a sua posição de equilíbrio por uma quantidade $x$ tem energia potencial dada por
+
+\begin{equation}
+    U_{mola}=\frac{1}{2}kx^2
+\end{equation}
+
+\subsubsection{Conservação da Energia Mecânica}
+Se separarmos as forças do mundo em forças conservativas e não conservativas, então o Teorema do Trabalho-Energia Cinética diz que
+
+\begin{equation}
+    W=W_{conservativa}+W_{nao\ conservativa}=\Delta K
+\end{equation}
+
+Da Equação \ref{eq:trabalho-potencial}, o trabalho feito por forças \emph{conservativas} pode ser escrito como
+
+$$
+W_{conservativas}=-\Delta U
+$$
+
+onde $U$ é a soma de \emph{todos} os tipos de energia potencial. Substituindo o resultado acima na Equação \ref{eq:trabalho-potencial}, temos
+
+$$
+-\Delta U + W_{n\tilde{a}o\ conservativas}=\Delta K
+$$
+
+Reorganizando a equação acima, obtemos o \textbf{teorema geral da Conservação de Energia Mecânica}:
+
+\begin{equation}\label{eq:conservação_em}
+    \Delta K+\Delta U=W_{n\tilde{a}o\ conservativas}
+\end{equation}
+
+Define-se a \textbf{energia total do sistema} $E$ como a suma da energia cinética e potencial de todos os seus objetos constituintes:
+
+\begin{equation}
+    E=K+U
+\end{equation}
+
+Então, a Equação \ref{eq:conservação_em} pode ser escrita
+
+\begin{equation}\label{eq:var_energia}
+    \Delta E=\Delta K + \Delta U=W_{n\tilde{a}o\ conservativas}
+\end{equation}
+
+Por palavras, esta equação diz que a energia mecânica total muda com a quantidade de trabalho feito pelas forças não conservativas.
+
+A maioria dos problemas apresentados são situações onde as forças que atuam nos objetos que se movem são apenas forças conservativas; vagamente falando, isto quer dizer que não há atrito ou que o atrito é negligível.
+Se o caso acima de verificar, a Equação \ref{eq:var_energia} pode ser escrita numa forma mais simples:
+
+\begin{equation}
+    \Delta E = \Delta K + \Delta U = 0
+\end{equation}
+
+Esta equação pode ser escrita:
+
+$$
+K_i+U_i=K_f+U_f \qquad ou \qquad E_i=E_f
+$$
+
+Noutras palavras, para aqueles casos em que podemos ignorar as forças de atrito, se somarmos todos os tipos de energia para a posição inicial da partícula, é igual à soma de todos os tipos
+de energia para a posição final da partícula. Nesse caso, a quantidade de energia mecânica continua o mesmo... é conservada.
+
+A conservação de energia é útil em problemas onde só precisamos de saber as posições ou velocidades, mas não o \emph{tempo} do movimento.
+
+\subsubsection{Trabalho de Forças Não-Conservativas}
+Quando, no sistema, atuam forças de atrito, temos de voltar à Equação \ref{eq:var_energia}. A mudança na energia mecânica total é igual ao trabalho feit opelas forças não conservativas:
+
+\begin{equation}
+    \Delta E=E_f-E_i=W_{n\tilde{a}o\ conservativas}
+\end{equation}

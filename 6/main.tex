@@ -1,0 +1,153 @@
+\section{Momento Linear e Colisões}
+\subsection{Conteúdo Importante}
+\subsubsection{Momento Linear}
+
+O \textbf{momento linear} de uma partícula com massa $m$ que se move com uma velocidade $v$ é definido por
+
+\begin{equation}\label{eq:momento_linear}
+    p=mv
+\end{equation}
+
+O momento linear é um vetor. As unidades do SI para $p$ são $kg\cdot m \cdot s^{-1}$.
+O momento de uma partícula está relacionado com a força resultante nessa partícula de uma maneira simples; tendo em conta que a massa de uma partícula permanece constante, se derivar-mos em ordem ao tempo, descobri-mos que
+
+$$
+\frac{dp}{dt}=m\frac{dv}{dt}=ma=F_{R}
+$$
+
+pelo que
+
+\begin{equation}\label{eq:força-momento}
+    F_{R}=\frac{dp}{dt}
+\end{equation}
+
+\subsection{Impulso, Força Média}
+Quando uma partícula se move livremente, interage com outro sistema por um (breve) período e, depois, move-se livremente novamente, tem uma mudança definida no momento; definimos esta mudança como o impulso $I$ das forças de interação:
+
+\begin{equation}\label{eq:impulso}
+    I=p_f-p_i=\Delta p
+\end{equation}
+
+O impulso é um vetor e tem as mesmas unidades que o momento linear, $kg\cdot m \cdot s^{-1}$.
+
+Integrando a Equação \ref{eq:força-momento}, podemos mostrar que:
+
+$$
+I=\int_{t_i}^{t_f}Fdt=\Delta p
+$$
+
+Podemos definir a \textbf{força média} que age sob uma partícula durante um intervalo de tempo $\Delta t$. Esta é:
+
+$$
+\bar{F}=\frac{\Delta p}{\Delta t}=\frac{I}{\Delta t}
+$$
+
+\subsection{Conservação do Momento Linear}
+O momento linear é uma quantidade útil para os casos em que temos algumas partículas (objetos) que interagem entre si, mas não com o resto do mundo. Um sistema desse tipo é chamado um \textbf{sistema isolado}.
+
+Muitas vezes temos motivos para estudar sistemas onde algumas partículas interagem umas com as outras muito rapidamente, com forças que são fortes em comparação com as outras forças do mundo que podem experiênciar. Nessas situações, e por esse breve período de tempo, podemos tratar as partículas como se estivessem isoladas.
+
+Podemos mostrar que quando duas partículas interagem \emph{apenas} consigo mesmas (i.e. estão isoladas) então o seu momento total mantém-se constante:
+
+\begin{equation}\label{eq:conserv-ml}
+    p_{1i}+p_{2i}=p_{1f}+p_{2f}
+\end{equation}
+
+ou, em termos das suas massas e velocidades,
+
+\begin{equation}
+    m_1v_{1i}+m_2v_{2i}=m_1v_{1f}+m_2v_{2f}
+\end{equation}
+
+ou, abreviando, $p_1+p_2=P$ (momento total), isto é: $P_i=P_f$.
+É importante perceber que a Equação \ref{eq:conserv-ml} é uma equação \emph{vetorial}; diz-nos que o momento total da componente $x$ é conservada e que o total da componente $y$ é, igualmente, conservada.
+
+\subsection{Colisões}
+Quando falamos sobre uma colisão na física (entre duas partículas, digamos), queremos dizer que duas partículas movem-se livremente pelo espaço até se aproximarem uma da outra; então, por um
+curto período de tempo, elas exercem fortes forças uma sobre a outra até que se separem e movam-se, novamente, livremente.
+
+Para tal evento, as duas partículas têm momentos bem definidos $p_{1i}$ e $p_{2i}$ antes do evento de colisão e $p_{1f}$ e $p_{2f}$ posteriormente. Mas a soma dos momentos antes e depois da colisão é conservada, conforme escrito na Equação \ref{eq:conserv-ml}.
+
+Apesar do momento total ser conservado para um sistema isolado de partículas que colidem, a energia mecânica pode ou não ser conservada. Se a energia mecânica for a mesma antes e depois da colisão, dizemos que a colisão é \textbf{elástica}. Caso contrário, diz-se que a colisão é \textbf{inelástica}.
+
+Se dois objetos colidirem, ficarem juntos e moverem-se como uma massa combinada, diz-se que aconteceu uma \textbf{colisão perfeitamente inelástica}. Pode-se mostrar que em tal colisão mais energia cinética é perdida do que se os objetos ressaltassem um no outro e se afastassem separadamente.
+
+Quando duas partículas sofrem uma colisão \emph{elástica}, sabemos que
+
+$$
+\frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2=\frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2
+$$
+
+No caso especial de uma colisão elástica unidimensional entre as massas $m_1$ e $m_2$, podemos relacionar as velocidades finais às velocidades iniciais. O resultado é
+
+\begin{equation}
+    v_{1f}=\frac{m_1-m_2}{m_1+m_2}v_{1i}+\frac{2m_2}{m_1+m_2}v_{2i}
+\end{equation}
+
+\begin{equation}
+    v_{2f}=\frac{2m_1}{m_1+m_2}v_{1i}+\frac{m_2-m_1}{m_1+m_2}v_{2i}
+\end{equation}
+
+Este resultado pode ser útil na resolução de um problema onde ocorre tal colisão, mas não é um equação fundamental. Portanto, não é de útil memorização.
+
+\subsection{Centro de Massa}
+Para um sistema de partículas, há um ponto especial no espaço conhecido como o \textbf{centro de massa} que tem uma enorme importância na descrição do movimento do sistema. Este ponto é uma média ponderada das posições de todos os pontos de massa.
+
+Se as particulas de um sistema têm massas $m_1$, $m_2$, ..., $m_N$, com massa total
+
+$$
+\sum_{i}^{N}=m_1+m_2+...+m_N\equiv M
+$$
+
+e respetivas posições $r_1$, $r_2$, ..., $r_N$, então o centro de massa $r_{CM}$ é
+
+\begin{equation}\label{eq:centro_massa}
+    r_{CM}=\frac{1}{M}\sum_{i}^{N}m_ir_i
+\end{equation}
+
+o que quer dizer que as coordenadas $x$, $y$ e $z$ do centro de massa são
+
+\begin{equation}\label{eq:centro_massa_coordenadas}
+    x_{CM}=\frac{1}{M}\sum_{i}^{N}m_ix_i \qquad y_{CM}=\frac{1}{M}\sum_{i}^{N}m_iy_i \qquad z_{CM}=\frac{1}{M}\sum_{i}^{N}m_iz_i
+\end{equation}
+
+Para uma distribuição contínua de massa, a definição de $r_{CM}$ é dado pelo integral sobre os elementos de massa do objeto:
+
+\begin{equation}\label{eq:centro_massa_cont}
+    r_{CM}=\frac{1}{M}\int \mathbf{r}dm
+\end{equation}
+
+pelo que as coordenadas $x$, $y$ e $z$ do centro de massa são
+
+\begin{equation}\label{eq:centro_massa_cont_coordenadas}
+    x_{CM}=\frac{1}{M}\int xdm \qquad y_{CM}=\frac{1}{M}\int ydm \qquad z_{CM}=\frac{1}{M}\int zdm
+\end{equation}
+
+Quando as partículas de um sistema estão em movimento, então, em geral, o seu centro de massa está também em movimento. A velocidade do centro de massa é uma semelhante média ponderada das velocidades individuais:
+
+\begin{equation}\label{eq:centro_massa_velocidade}
+    v_{CM}=\frac{dr_{CM}}{dt}=\frac{1}{M}\sum_{i}^{N}m_iv_i
+\end{equation}
+
+Em geral, o centro de massa vai acelerar; a sua aceleração é dada por
+
+\begin{equation}\label{eq:centro_massa_aceleração}
+    a_{CM}=\frac{dv_{CM}}{dt}=\frac{1}{M}\sum_{i}^{N}m_ia_i
+\end{equation}
+
+Se $\mathbf{P}$ é o momento total do sistema e $M$ é a massa total do sistema, então o movimento do centro de massa está relacionado com $\mathbf{P}$ por:
+
+$$
+v_{CM}=\frac{P}{M} \qquad e \qquad a_{CM}=\frac{1}{M}\frac{dP}{dt}
+$$
+
+\subsection{Movimento de um Sistema de Partículas}
+Um sistema de muitas partículas (ou um objeto estendido) em geral tem um movimento para o qual o descrição é muito complicada, mas é possível fazer uma declaração simples sobre o
+movimento de seu centro de massa. Cada uma das partículas do sistema pode sentir forças de outras partículas do sistema, mas também pode sentir uma força resultante do ambiente (externo); vamos denotar essa força por $F_{ext}$. Descobrimos que quando somamos todas as forças externos agindo sobre todas as partículas de um sistema, dá a aceleração do \emph{centro de massa} de acordo com:
+
+\begin{equation}
+    \sum_{i}^{N}F_{ext, i}=Ma_{CM}=\frac{dP}{dt}
+\end{equation}
+
+Aqui, $M$ é a massa total do sistema; $F_{ext, i}$ é a força externa que atua na partícula $i$.
+Em palavras, podemos expressar o resultado acima da seguinte forma: \emph{para um sistema de partículas, o centro de massa move-se como se fosse uma única partícula de massa $M$ movendo-se sob a influência da soma das forças externas}.
