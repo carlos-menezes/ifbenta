@@ -1,0 +1,228 @@
+\subsection{Segunda Lei de Newton}
+\textbf{1.} Uma massa de 3.0kg sofre uma aceleração dada por $a=(2.0i + 5.0j)ms^{-2}$. Qual é a força resultante e a sua magnitude?
+\linebreak
+A Segunda Lei de Newton diz-se que a força resultante numa massa $m$ é $\sum F = ma$. Portanto,
+
+$$
+\begin{aligned}
+    F_{R}&=ma \\
+        &=(3.0\ kg)(2.0i+5.0j)ms^{-2} \\
+        &=(6.0i + 15j)N
+\end{aligned}
+$$
+
+A magnitude da $F_{R}$ é dada pelo cálculo da norma do vetor $F_{R}$:
+
+$$
+\begin{aligned}
+    F_{R}=\sqrt{(6.0N)^2+(15.0N)^2}=16N
+\end{aligned}
+$$
+
+\textbf{2.} Enquanto duas forças agem sobre ela, uma massa de $m=3.2kg$ move-se com uma velocidade constante $(3ms)i-(4ms)j$. Uma dessas forças é $F_1=(2N)i+(-6N)j$. Qual é a outra força?
+\linebreak
+A Segunda Lei de Newton diz-se que a força resultante numa massa $m$ é $\sum F = ma$. Portanto, $\sum F = ma \equiv F_1+F_2=ma$. Neste caso, a velocidade é constante, pelo que $a=0$. Portanto,
+
+$$
+\begin{aligned}
+    F_1+F_2&=0 \\
+    \implies F_2&=-F_1 \\
+    \implies F_2&=-[(2N)i+(-6N)j] \\
+    \implies F_2&=(-2N)i+(6N)j
+\end{aligned}
+$$
+
+\textbf{3.} Um objeto de massa $m=4.0\ kg$ tem uma velocidade de $3.0i\ ms^{-1}$ num dado instante. Oito segundos depois, a sua velocidade é $(8.0i+10.0j)ms^{-1}$. Assumindo que o objeto foi sujeito a uma força resultante constante, encontre (a) as componentes da força e (b) a sua magnitude. \\
+\linebreak
+\textbf{(a)} É-nos dito que a força resultante que age na massa foi constante. Logo, sabemos que a sua aceleração foi igualmente constante, we podemos usar resultados de capítulos anteriores. São facultadas as velocidades inicias e final, pelo que é possível calcular as componentes da aceleração:
+
+$$
+a_x=\frac{\Delta v_x}{\Delta t}=\frac{[(8.0\ ms^{-1})-(3.0\ ms^{-1})]}{(8.0\ s)}=0.63\ ms^{-2}
+$$
+
+$$
+a_y=\frac{\Delta v_y}{\Delta t}=\frac{[(1.0\ ms^{-1})-(0.0\ ms^{-1})]}{(8.0\ s)}=1.3\ ms^{-2}
+$$
+
+Visto que a massa é facultada no enunciado, é possível calcular as componentes da força resultante:
+
+$$
+\begin{aligned}
+    F_x=ma_x=(4.0\ kg)(0.63\ ms^{-2})=2.5N \\
+    F_y=ma_y=(4.0\ kg)(1.3\ ms^{-2})=5.0N \\
+\end{aligned}
+$$
+
+\textbf{(b)} A magnitude da força resultante é obtida através da seguinte computação:
+
+$$
+F=\sqrt{F_x^2+F_y^2}=\sqrt{(2.5\ N)^2+(5.0\ N)^2}=5.6\ N
+$$
+
+A direção $\theta$ da força $F$ é dada por
+
+$$
+\tan \theta = \frac{F_y}{F_x} = 2.0 \quad \implies \quad \theta = \arctan(2.0)=63.4^{\circ}
+$$
+
+\textbf{4.} Cinco forças atuam sobre a caixa de massa $4.0\ kg$ na Figura \ref{fig:4caixa}. Encontre a aceleração da caixa (a) na notação unidade-vetor e (b) a sua magnitude e direção.
+\linebreak
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{forças/fig/ex4.png}
+    \caption{Cinco forças atuam num caixa de massa $4.0\ kg$.}
+    \label{fig:4caixa}
+\end{figure}
+
+
+\textbf{(a)} Existe a necessidade de separar as forças nas suas duas componentes $x$ e $y$. A Segunda Lei de Newton será utilizada para computar o valor da aceleração da caixa.
+
+$$
+\begin{aligned}
+    \sum F_x&=-11N+3N+14\cos(30º) \\
+    &=4.1N
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+    \sum F_y&=+5N-17N+14\sin(30) \\
+    &=-5.0N
+\end{aligned}
+$$
+
+Logo, tem-se que a força resultante é
+
+$$
+\sum F=(4.1N)i+(-5.0N)j
+$$
+
+Utilizando a Equação \ref{eqn:2newton}, temos:
+
+$$
+    \sum a_x=\frac{\sum F_x}{m}=\frac{(4.1\ N)}{4.0\ kg}=1.0\ ms^{-2} \\
+    \sum a_y=\frac{\sum F_y}{m}=\frac{(-5.0\ N)}{4.0\ kg}=-1.2\ ms^{-2} \\
+$$
+
+
+O valor da aceleração em notação vetorial é, então,
+
+$$
+a=(1.0i-1.2j)ms^{-2}
+$$
+
+\textbf{(b)} A aceleração encontrada em (a) tem magnitude
+
+$$
+a=\sqrt{a_x^2+x_y^2}=\sqrt{(4.0\ ms^{-2})^2+(-1.2\ ms^{-2})^2}=1.6\ ms^{-2}
+$$
+
+A direção $\theta$ do vetor aceleração é dada por
+
+$$
+\tan \theta = \frac{a_y}{a_x} = -1.2 \quad \implies \quad \theta = \arctan(-1.2)=-50^{\circ}
+$$
+
+Neste caso, tendo em conta que $a_y$ é negativo e $a_x$ é positivo, a escolha de $\theta = -50^{\circ}$ está correta.
+
+\subsection{Exemplos de Forças}
+\textbf{5.} Encontre a tensão em cada uma das cordas da Figura \ref{fig:5caixa}.
+\linebreak
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{forças/fig/ex5.png}
+    \caption{Massas suspensas por cordas.}
+    \label{fig:5caixa}
+\end{figure}
+
+\textbf{(a)} Seja $m_1$ a massa correspondente à bola representada na Figura \ref{fig:5caixa} (a). A força gravítica atua para baixo com uma força de magnitude $m_1g$. A corda vertical puxa "para cima" com uma força de magnitude $T_3$. Tendo em conta que a massa pendurada não tem aceleração, verifica-se que $T_3=m_1g$. Portanto, o valor de $T_3$ é dado por:
+
+$$
+T_3=m_1g=(5.0\ kg)(9.9\ ms^{-2})=49\ N
+$$
+
+Considerando agora o ponto de união das três cordas. Esse ponto não tem qualquer aceleração, pelo que o resultado da força resultante deverá ser zero. As componentes verticais e horizontains dessas forças somam a zero, separadamente.
+
+$$
+    \begin{cases}
+        -T_1\cos(40^{\circ})+T_2\cos(50^{\circ})=0 \\
+        T_1\sin(40^{\circ})+T_2\sin(50^{\circ})-T_3=0
+    \end{cases}
+$$
+
+A primeira equação, a soma das componentes horizontais, dá-nos $T_2=1.19T_1$.
+
+A segunda equação,  a soma das componentes verticais, dá-nos o valor  $T_1=31.5\ N$.
+
+Sabendo o valor de $T_1$, $T_2=1.19T_1\ \implies \ T_2=37.5\ N$
+
+As tensões no sistema (a) são, portanto:
+
+$$
+T_1=31.5\ N \qquad T_2=37.5\ N \qquad T_3=49\ N
+$$
+
+\textbf{(b)} A força resultante na massa pendurada, $m_2$, tem de ser 0, porque não há aceleração. Visto que a gravida "puxa para baixo" com uma força $m_2g$ e a corda vertical "puxa para cima" com uma força $T_3$, sabemos que
+
+$$
+T_3-F_g=0 \implies T_3=F_g \implies T_3=m_2g \\
+\begin{aligned}
+    T_3&=m_2g
+    &=(10\ kg)\cdot(9.8\ ms^{-2})=98\ N
+\end{aligned}
+$$
+
+Considerando agora as forças que atuam no ponto onde todas as forças se encontram. Novamente, como não há aceleração nesse ponto, tanto as componentes verticais como horizontais somam a zero.
+
+No que toca às forças horizontais, temos:
+
+$$
+-T_1\cos(60^{\circ})+T_2=0 \qquad \implies \qquad T_2=T_1\cos(60^{\circ}) \\
+$$
+
+A soma das forças verticais é dada por:
+
+$$
+T_1\sin(60^{\circ})-T_3=0 \qquad \implies \qquad T_1=\frac{T_3}{\sin(60^{\circ})}=113\ N
+$$
+
+Podemos, depois, obter $T_2$:
+
+$$
+T_2=T_1\cos(60^{\circ})=(133\ N)\cos(60^{\circ})=56.6\ N
+$$
+
+As tensões no sistema (b) são, portanto:
+
+$$
+T_1=133\ N \qquad T_2=56.6\ N \qquad T_3=98\ N
+$$
+
+\textbf{6.} Um bloco de massa $m=2.0\ kg$ está suspenso em equilíbrio num encosta que faz um ângulo $\theta=60^{\circ}$ pela força horizontal $F$, como mostrado na Figura \ref{fig:6plano}. (a) Determine o valor de $F$, a magnitude de $F$. (b) Determine a força normal exercida pelo plano inclinado no bloco (ignore o atrito).
+\linebreak
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{forças/fig/ex6.png}
+    \caption{(a) Bloco em repouso numa rampa sem atrito por uma força horizontal. (b) Forças a atuarem no bloco.)}
+    \label{fig:6plano}
+\end{figure}
+
+\textbf{(a)} Fazer um diagrama de das forças que atuam no corpo torna-se essencial para este problema, daí a inclusão da \ref{fig:6plano} (b). Muitas vezes, para problemas envolvendo um bloco num plano inclinado, é mais fácil usar as componentes da $F_g$ ao longo desse mesmo plano inclinado e perpendicular a ele. Para este problema, isso não torna as coisas mais fáceis, uma vez que não há movimento no plano inclinado.
+
+Do enunciado, retira-se a informação de que o block está em equilíbrio, pelo que não tem aceleração e as forças que em si atuam somam a zero. Este facto permite-nos escrever:
+
+$$
+N\sin(30^{\circ})-F_g=0 \qquad \implies \qquad N=\frac{F_g}{\sin(30^{\circ})}
+$$
+
+$$
+N=\frac{(2.0\ kg)\cdot(9.8\ ms^{-2})}{\sin(30^{\circ})}=39.2\ N
+$$
+
+O resultado da força resultante horizontal também é nulo, logo podemos escrever:
+
+$$
+F-N\cos(30^{\circ})=0 \qquad \implies \qquad F=N\cos(30^{\circ})=33.9\ N
+$$
+
+\textbf{(b)} O resultado da força Normal foi encontrado anteriormente, $N=39.2\ N$.

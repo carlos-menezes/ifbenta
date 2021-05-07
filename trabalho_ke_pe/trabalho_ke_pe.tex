@@ -1,0 +1,70 @@
+\part{Trabalho, Energia Cinética e Energia Potencial}
+\section{Conteúdo Importante}
+\subsection{Energia Cinética}
+
+Para um objeto com massa $m$ e velocidade $v$, a energia cinética está definida como
+
+\begin{equation}
+    K=\frac{1}{2}mv^2
+\end{equation}
+
+A energia cinética é um escalar (tem magnitude mas não direção); é sempre um número positivo; e tem unidades do SI de $kg\cdot m^2s^{-2}$. Esta combinação é também conhecida como \textbf{joule}:
+
+\begin{equation}
+    1\ joule=1J=1\ kg\cdot m^2s^{-2}
+\end{equation}
+
+\subsection{Trabalho}
+Quando um objeto se move enquanto um força é exercida sobre ele, então há \textbf{trabalho} a ser feito no objeto pela força.
+Se um objeto efetuar um deslocamento $d$ enquanto uma \emph{força constante} \textbf{F} atua nele, a força faz uma quantidade de trabalho igual a
+
+$$
+W=F\cdot d=Fdcos\phi
+$$
+
+onde $\phi$ é o ângulo entre \textbf{d} e \textbf{F}. O trabalho é também uma grandeza escalar cujas unidades são $N\cdot m$.
+
+O trabalho pode ser negativo; isto acontece quando o ângulo entre a força e o deslocamento é maior que 90^{\circ}. Também pode ser \emph{zero}; isto acontece se $\phi=90^{\circ}$. Para que exista trabalho, a força tem de ter uma componente ao longo (ou oposta) à direção do deslocamento.
+Se várias forças (constantes) atuarem na massa enquanto se move ao longo de um deslocamento \textbf{d}, podemos falar do \textbf{trabalho resultante} feito pelas forças,
+
+$$
+\begin{aligned}
+    W_{R}&=F_1\cdot d+F_2\cdot d+F_3\cdot d...+F_n\cdot d\\
+    &=(\sum F)\cdot d \\
+    &=F_{R}\cdot d
+\end{aligned}
+$$
+
+Se a força que atua sobre o objeto não é constante enquanto o objeto se move, então devemos calcular um integral para encontrar o trabalho realizado.
+Supondo que o objeto se mova ao longo de uma linha reta (digamos, ao longo do eixo $x$, de $x_i$ a $x_f$) enquanto
+uma força cujo componente $x$ é $F_x(x)$ atua sobre ele. (Ou seja, conhecemos a força $F_x$ como uma função
+de $x$.) Então, o trabalho realizado é
+
+$$
+\begin{equation}
+    W=\int_{x_i}^{x_f}F_x(x)dx
+\end{equation}
+$$
+
+Finalmente, podemos dar a expressão general para o trabalho feito por uma força. Se um objeto se move de $r_i=x_ii+y_ij+z_ik$ a $r_f=x_fi+y_fj+z_fk$ enquanto a força $F(r)$ atua sobre ele, o trabalho feito é:
+
+$$
+    \begin{equation}
+        W=\int_{x_i}^{x_f}F_x(r)dx+\int_{y_i}^{y_f}F_y(r)dy+\int_{z_i}^{z_f}F_z(r)dz
+    \end{equation}
+$$
+
+onde os integrais são calculados ao longo do caminho traçado pelo objeto. Esta expressão pode ser abreviada por
+
+$$
+W=\int_{r_i}^{r_f}F\cdot dr
+$$
+
+A gravidade funciona em objetos que se movem verticalmente. Pode-se mostrar que se a altura de um objeto mudou numa quantidade $\Delta y$, então a gravidade fez uma quantidade de trabalho igual a 
+$$
+W_{g}=-mg\Delta y
+$$
+
+sem qualquer influência do deslocamento horizontal. Observe-se o sinal de menos aqui; se o objeto aumenta em altura, moveu-se de forma oposta à força da gravidade.
+
+\subsection{Molas}
