@@ -1,0 +1,77 @@
+\section{Movimento em Uma Dimensão}
+\subsection{Conteúdo Importante}
+\subsubsection{Posição, Tempo e Deslocamento}
+
+Começamos o estudo do movimento considerando objetos que são muito pequenos em comparação com o tamanho de seu movimento no espaço. Quando podemos lidar com um objeto desta forma, referimo-nos a ele como uma \textbf{partícula}. Neste capítulo, lidamos com o caso em que uma partícula se move ao longo de uma linha reta.
+
+A localização de uma partícula é especificada pela sua coordenadas, denotada por $x$ ou $y$. À medida que a partícula se move, a sua coordenada muda com o tempo, $t$. A mudança de posição da partícula de $x_1$ para $x_2$ é o deslocamento $\Delta x$, com $\Delta x = x_2 - x_1$.
+
+\subsubsection{Velocidade Média e Celeridade Média}
+Quando uma partícula sofre um deslocamento $\Delta x$ num intervalo de tempo $\Delta t$, a sua \textbf{velocidade média} para esse intervalo de tempo é
+
+\begin{equation}
+    \bar{v}=\frac{\Delta x}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}
+\end{equation}
+
+A \textbf{celeridade média} de uma partícula é o valor absoluto da velocidade média e é dado por
+
+\begin{equation}
+    \bar{c}=\frac{\text{Distância percorrida}}{\Delta t}
+\end{equation}
+
+\subsubsection{Velocidade Instantânea e Celeridade Instantânea}
+Podemos responder à pergunta \emph{"o quão rápido se move a partícula no instante t?"} descobrindo a sua velocidade instantânea. Este é o caso em que o tempo considerado na velocidade média, $\Delta t$, converge para \emph{zero}:
+
+\begin{equation}
+    v=\lim_{\Delta t \to 0}\frac{\Delta x}{\Delta t}
+\end{equation}
+
+A \textbf{celeridade instantânea} é o valor absolute (magnitude) da velocidade instantânea.
+
+Num gráfico posição-tempo ($x\ vs.\ t$) para uma partícula que se move, a velocidade instantânea é o declive da tangente à curva em qualquer ponto.
+
+\subsubsection{Aceleração}
+Quando a velocidade de uma partícula se altera, diz-se que a partícula sofre aceleração.
+
+Se a velocidade de uma partícula se altera de $v_1$ para $v_2$ durante o intervalo de tempo $t_1$ a $t_2$, a \textbf{aceleração média} é definida como
+
+\begin{equation}
+    \bar{a}=\frac{\Delta v}{\Delta t}=\frac{x_2-x_1}{t_2-t_1}
+\end{equation}
+
+Tal como a velocidade, é importante racicionar sobre a \textbf{aceleração instantânea}, dada por
+
+\begin{equation}
+    a=\lim_{\Delta t \to 0}\frac{\Delta v}{\Delta t}=\frac{dv}{dt}
+\end{equation}
+
+Se a aceleração $a$ for positiva, a velocidade instantânea $v$ está a aumentar; se $a$ for negativo, então $v$ está a diminiur.
+
+\subsubsection{Aceleração Constante}
+Um caso útil \emph{especial} do movimento acelerado é aquele em que a aceleração $a$ é constante. Para este caso, é possível mostrar que as seguintes equações são verdadeiras:
+
+\begin{equation}
+    v=v_0+at
+\end{equation}
+\begin{equation}
+    x=x_0+v_0t+\frac{1}{2}at^2
+\end{equation}
+\begin{equation}
+    v^2=v_0^2+2a(x-x_0)
+\end{equation}
+\begin{equation}
+    x=x_0+\frac{1}{2}(v_0+v)t
+\end{equation}
+
+Nas equações acimas, a partícula tem posição $x_0$ e velocidade $v_0$ no tempo $t=0$; tem posição $x$ e velocidade $v$ no tempo $t$.
+Atente-se que as equações acima apenas são válidas para cases em que a \text{aceleração é constante}!
+
+\subsubsection{Queda Livre}
+Um objeto lançado para cima ou para baixo perto da superfície terrestre tem aceleração constante, direcionada para baixo, de magnitude $9.8\ ms^{-2}$. Este número é denotado por $g$.
+É preciso ter um cuidado redobrado com o sinal; se no sistema de coordenadas adotado o eixo $y$ aponta para cima, a aceleração de um objeto em queda livre é
+
+\begin{equation}
+    a_y=-9.80\ ms^{-2}=-g
+\end{equation}
+
+Aqui, assume-se que o ar não tem efeito no movimento do objeto em queda livre. É importante saber que a aceleração do objeto é \textbf{sempre} $9.80\ ms^{-2}$, esteja ele a subir, descer ou na altura máxima... sempre!

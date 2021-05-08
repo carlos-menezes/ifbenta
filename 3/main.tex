@@ -1,0 +1,144 @@
+\section{Movimento em Duas e Três Dimensões}
+\subsection{Conteúdo Importante}
+\subsubsection{Posição}
+
+Em três dimensões, a posição de uma partícula é especificada pelo seu \textbf{vetor posição}, \textbf{r}:
+
+\begin{equation}
+    r=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}
+\end{equation}
+
+Se, durante o intervalo $\Delta t$ o vetor posição da partícula muda de $r_1$ para $r_2$, o deslocamento $\Delta r$ para esse intervalo de tempo é
+
+\begin{equation}
+    \Delta r=r_1-r_2
+\end{equation}
+\begin{equation}
+    =(x_2-x_1)i+(y_2-y_1)j+(z_2-z_1)k
+\end{equation}
+
+\subsubsection{Velocidade}
+
+Se uma partícula se move ao longo de um deslocamento $\Delta r$ num intervalo de tempo $\Delta t$, então a sua velocidade média para esse intervalo é
+
+\begin{equation}
+    \bar{v}=\frac{\Delta r}{\Delta t}=\frac{\delta x}{delta t}i+\frac{\delta y}{delta t}j+\frac{\delta z}{delta t}k
+\end{equation}
+
+Uma quantidade mais interessante é a velocidade \emph{instantânea} \textbf{v}, que é o limite da velocidade média quando se diminiu o intervalo de tempo $\Delta t$ para \emph{zero}. É, portanto, a derivada do vetor posição $r$ em ordem ao tempo:
+
+\begin{equation}
+    v=\frac{dr}{dt}
+\end{equation}
+\begin{equation}
+    =\frac{d}{dt}(xi+yj+zk)
+\end{equation}
+\begin{equation}
+    =\frac{dx}{dt}i+\frac{dy}{dt}j+\frac{dz}{dt}k
+\end{equation}
+
+A velocidade instantânea $v$ de uma partícula é sempre tangente à trajetória da partícula.
+
+\subsubsection{Aceleração}
+Se a velocidade de uma partícula muda por $\Delta v$ num periodo de tempo $\Delta t$, a aceleração média $\bar{a}$ para esse período é
+
+\begin{equation}
+    \bar{a}=\frac{\Delta v}{\Delta t}=\frac{\Delta v_x}{\Delta t}i+\frac{\Delta v_y}{\Delta t}j+\frac{\Delta v_z}{\Delta t}k
+\end{equation}
+
+Uma quantidade mais interessante é a aceleração \emph{instantânea} \textbf{a}, que é o limite da aceleração média quando se diminiu o intervalo de tempo $\Delta t$ para \emph{zero}. É, portanto, a derivada do vetor velocidade $v$ em ordem ao tempo:
+
+\begin{equation}
+    v=\frac{dv}{dt}
+\end{equation}
+\begin{equation}
+    =\frac{d}{dt}(v_xi+v_yj+v_zk)
+\end{equation}
+\begin{equation}
+    =\frac{dv_x}{dt}i+\frac{dv_y}{dt}j+\frac{dv_z}{dt}k
+\end{equation}
+
+\subsubsection{Aceleração Constante em Duas Dimensões}
+Quando a aceleração $a$ (para um movimento em duas dimensões) é constante, existem duas equações para descrever as coordenadas $x$ e $y$, semelhantes a equações vistas no capítulo anterior. Nas equações seguintes, o movimento da partícula começa em $t=0$; a posição inicial da partícula é dada por
+
+$$
+r_0=x_0i+y_0j
+$$
+
+e a sua velocidade inicial é dada por
+
+$$
+v_0=v_{0x}i+v_{0y}j
+$$
+
+e o vetor $a=a_xi+a_yj$ é \emph{constante}.
+
+
+\begin{equation}
+    v_x=v_{0x}+a_xt \qquad v_y=v_{0y}+a_yt
+\end{equation}
+\begin{equation}
+    x=x_{0}+v_{0x}t+\frac{1}{2}a_xt^2 \qquad y=y_{0}+v_{0y}t+\frac{1}{2}a_yt^2
+\end{equation}
+\begin{equation}
+    v_x^2=v_{0x}^2+2a_x(x-x_0) \qquad v_y^2=v_{0y}^2+2a_y(y-y_0)
+\end{equation}
+\begin{equation}
+    x=x_{0}+\frac{1}{2}(v_{0x}+v_x)t \qquad y=y_{0}+\frac{1}{2}(v_{0y}+v_y)t
+\end{equation}
+
+
+\subsubsection{Movimento do Projétil}
+
+Quando uma partícula se move num plano vertical durante uma queda livre, a sua aceleração é constante; tem magnitude 9.8 $ms^{-2}$ e está direcionada para baixo. Se as suas coordenadas são dadas por um eixo horizontal $x$ e um eixo vertical $y$ direcionado para cima, então a aceleração do \textbf{projétil} é
+
+\begin{equation}
+    a_x=0 \qquad a_y=-9.8\ ms^{-2}=-g
+\end{equation}
+
+Para um projetil, a aceleração horizontal é zero!
+
+O movimento do projétil é um caso especial de aceleração constante, pelo que se usam as equações vistas no capítulo anterior.
+
+\subsubsection{Movimento Circular Uniforme}
+Quando uma partícula se move ao longo de uma trajetória circular a uma \emph{velocidade constante}, diemos que a partícula tem um \textbf{movimento circular uniforme}. Apesar de velocidade não mudar, \emph{a partícula está a acelerar} porque a sua velocidade $\mathbf{v}$ está a mudar de \emph{direção}.
+
+A aceleração da partícula está direcionada para o centro do círculo e tem magnitude
+
+\begin{equation}
+    a=\frac{v^2}{r}
+\end{equation}
+
+onde \emph{r} é o raio da trajetória circular e $v$ é a velocidade (constante) da partícula. Dizemos que a partícula em movimento circular uniforme tem \textbf{aceleração centrípeta} por causa da direção da aceleração (para o centro da trajetória).
+Se a partícula fizer, repetidamente, uma trajetória circular completa, então é útil falar no tempo $T$ que ela leva a completar uma volta. A isto chama-se o \textbf{período} do movimento. O período é dado por:
+
+\begin{equation}
+    T=\frac{2\pi r}{v}
+\end{equation}
+
+\subsubsection{Movimento Relativo}
+A velocidade de uma partícula depende de quem está a fazer essa medida; como veremos mais tarde, é perfeitamente válido considerar observadores "móveis" que carregam seus próprios relógios e coordenam sistemas com eles, ou seja, eles fazem medições de acordo com seu próprio \textbf{referencial}; isto é, um conjunto de coordenadas cartesianas que podem estar em movimento em relação a outro conjunto de coordenadas. Aqui, vamos supor que os eixos nos diferentes sistemas permanecem paralelos um ao outro; ou seja, um sistema pode se mover (transladar), mas não girar em relação a outro.
+
+Supondo que os observadores nos \emph{frames} A e B medem a posição de um ponto $P$. Então, se tivermos as definições
+
+$$
+\begin{aligned}
+    r_{PA}&=\text{posição de P medida por A} \\
+    r_{PB}&=\text{posição de P medida por B} \\
+    r_{BA}&=\text{posição da origem de B medida por A} \\
+\end{aligned}
+$$
+
+temos as relações:
+
+\begin{equation}
+    r_{PA}=r_{PB}+r_{BA}
+\end{equation}
+
+\begin{equation}\label{eq:velocidade-relativa}
+    v_{PA}=v_{PB}+v_{BA}
+\end{equation}
+
+As Leis de Newton (próximo capítulo) aplicam-se a tais \textbf{referências de inércia}. Observadores em cada um desses \emph{frames} concordam no valor da aceleração da partícula.
+
+Entre outros lugares, a Equação \ref{eq:velocidade-relativa} é usada em problemas onde um objeto como um avião ou barco tem uma velocidade conhecida no \emph{frame} de (em relação a) um meio como o ar ou a água que por si só se move em relação ao solo estacionário; podemos então encontrar a velocidade do avião ou barco em relação ao solo a partir da soma do vetor na Equação \ref{eq:velocidade-relativa}.
