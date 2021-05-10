@@ -10,9 +10,9 @@ Visto que este se trata de um assunto complicado, especializamos o caso em que u
 
 Devido às propriedades matemáticas de expressar uma medida de um ângulo em \emph{radianos}, normalmente expressamos todos os ângulos em radianos durante o estudo das rotações; ocasionalmente, pode falar-se em \emph{revoluções}. Revoluções, graus e radianos estão relacionados:
 
-$$
-1\ revolução=360^{\circ}=2\pi\ radianos
-$$
+\begin{equation*}
+    1\ \text{revolução}=360^{\circ}=\pi\ radianos
+\end{equation*}
 
 \begin{figure}[h!]
     \centering
@@ -122,7 +122,7 @@ Se $r_i$ for a distância do $i$-ésimo ponto de massa ao eixo, então $v_i=r_i\
     K_{r}=\sum_{i}\frac{1}{2}m_i(r_i\omega)^2=\frac{1}{2}()\sum_i m_i)\omega^2
 \end{equation}
 
-O somatório $\sum_i m_ir_i^2$ é chamada o \textbf{momento de inércia} para o objeto de rotação, e é usualmente denotado por $I$. Tem unidades do SI de $\kg\cdot m^2$. Com esta simplificação, a equação anterior torna-se
+O somatório $\sum_i m_ir_i^2$ é chamada o \textbf{momento de inércia} para o objeto de rotação, e é usualmente denotado por $I$. Tem unidades do SI de $kg\cdot m^2$. Com esta simplificação, a equação anterior torna-se
 
 \begin{equation}
     K_{r}=\frac{1}{2}I\omega^2
@@ -135,7 +135,7 @@ Para um objeto em rotação composto por vários pontos de massa, o \textbf{mome
     I=\sum_i m_ir_i^2
 \end{equation}
 
-Tem unidades do SI de $\kg\cdot m^2$ e é um escalar (i.e. um único número que é sempre positivo). Mais frequentemente, lidamos com um objeto que é uma distribuição contínua de massa, e para este caso temos a expressão mais geral
+Tem unidades do SI de $kg\cdot m^2$ e é um escalar (i.e. um único número que é sempre positivo). Mais frequentemente, lidamos com um objeto que é uma distribuição contínua de massa, e para este caso temos a expressão mais geral
 
 \begin{equation}
     I=\int r^2dm
@@ -159,3 +159,83 @@ Supondo que a força \textbf{F} (cuja direção está no plano de rotação) é 
 \begin{equation}
     |\tau|=rF\sin \phi
 \end{equation}
+
+Reagrupando alguns temos, a equação pode ser escrita
+
+\begin{equation*}
+    \tau=r(F\sin \phi)=rF_t
+\end{equation*}
+
+onde $F_t=F\sin \phi$ é a componente da força perpendicular a $r$, ou
+
+\begin{equation*}
+    \tau=(r\sin \phi)F=r_{\perp}F
+\end{equation*}
+
+onde $r_{\perp}=r\sin \theta$ é a distância entre o eixo e a linha que obtemos "extendendo" o vetor força numa linha denominada \textbf{linha de ação}. A distância $r_{\perp}$ é chamada o \textbf{braço de momento} da força \textbf{F}. 
+
+\subsubsection{Torque e Aceleração Angular (Segunda Lei de Newton para Rotações)}
+A aceleração angular de um objeto em rotação é proporcional à torque resultante no objeto; estão relacionadas por:
+
+\begin{equation}
+    T_{R}=I\alpha
+\end{equation}
+
+onde $I$ é o momento de inércia do objeto.
+Esta equação é parecida à Segunda Lei de Newton para movimentos em uma dimensão, $F_x=ma_x$.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+    Quantidade Linear & Quantidade Angular \\
+    \hline
+    x                 & $\theta$           \\
+    \hline
+    v                 & $\omega$           \\
+    \hline
+    a                 & $\alpha$           \\
+    \hline
+    m                 & I                  \\
+    \hline
+    F                 & $\tau$             \\
+    \hline
+    p                 & L                   \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Trabalho, Energia e Potência em Movimento Rotacional}
+Tal como a fórmula (abreviada) para o trabalho feito por uma força para um deslocamento pequeno, $W=F_xdx$, existe uma fórmula para o trabalho efetuado pela \emph{torque} para um pequeno deslocamento angular $d\theta$:
+
+$$
+W=\tau d\theta
+$$
+
+Para um deslocamento angular finito de $\theta_i$ a $\theta_f$, o trabalho feito é
+
+\begin{equation}
+    W=\int_{\theta_i}^{\theta_f}\tau d\theta
+\end{equation}
+
+\subsubsection{Equações do Movimento Angular}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+    Relação Linear & Relação Angular \\
+    \hline
+    $v=v_0+at$                & $\omega=\omega_0+\alpha t$           \\
+    \hline
+    $x=x_0+v_0t+\frac{1}{2}at^2$                 & $\theta=\theta_0+\omega_0t+\frac{1}{2}\alpha t^2$           \\
+    \hline
+    $v^2=v_0^2+2a(x-x_0)$                 & $\omega^2=\omega^2_0+2\alpha(\theta-\theta_0)$           \\
+    \hline
+    $K=\frac{1}{2}mv^2$                 & $K=\frac{1}{2}I\omega^2$                  \\
+    \hline
+    $F=ma$                 & $\tau=I\alpha$             \\
+    \hline
+    $p=mv$                 & $L=I\omega$                   \\
+    \hline
+    \end{tabular}
+\end{table}
